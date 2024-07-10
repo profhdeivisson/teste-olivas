@@ -91,6 +91,7 @@ function Blog() {
       pt={5}
       pb={3}
       sx={{
+        maxWidth: "1920px",
         justifyContent: "center",
         flexDirection: "column",
         alignContent: "center",
@@ -99,7 +100,12 @@ function Blog() {
       <Grid item xs={12}>
         <Typography
           variant="h4"
-          sx={{ color: "var(--main-color)", fontWeight: "500", textAlign: "center" }}
+          sx={{
+            maxWidth: "1260px",
+            color: "var(--main-color)",
+            fontWeight: "500",
+            textAlign: "center",
+          }}
           mb={2}
         >
           Últimas do <span className="third">Blog</span>

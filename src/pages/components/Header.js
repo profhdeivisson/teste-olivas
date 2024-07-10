@@ -2,13 +2,7 @@ import { useState } from "react";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Image from "next/image";
-import {
-  Box,
-  IconButton,
-  Menu,
-  MenuItem,
-  Typography,
-} from "@mui/material";
+import { Box, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import StyledButton from "./StyledButton";
@@ -38,10 +32,9 @@ function Header() {
       md={12}
       xs={12}
       sx={{
+        maxWidth: "1920px",
         pt: 2,
         pb: 2,
-        // pl: { xs: 2},
-        // pr: { xs: 0},
         paddingX: { xs: 2 },
         justifyContent: { md: "center", sm: "space-between" },
         position: "fixed",
@@ -53,7 +46,11 @@ function Header() {
         item
         md={8}
         xs={12}
-        sx={{ display: "flex", justifyContent: "space-between" }}
+        sx={{
+          maxWidth: "1260px",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
       >
         <Grid>
           <Image

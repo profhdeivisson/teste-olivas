@@ -9,12 +9,20 @@ function Performance() {
       xs={12}
       id="performance"
       sx={{
+        maxWidth: "1920px",
         pt: 10,
         justifyContent: { md: "center", sm: "space-between" },
         paddingX: { xs: 2 },
       }}
     >
-      <Grid md={12} sx={{ display: "flex", justifyContent: "center" }}>
+      <Grid
+        md={12}
+        sx={{
+          maxWidth: "1260px",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <Typography
           variant="h4"
           sx={{
@@ -45,7 +53,7 @@ function Performance() {
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",
-          pr: {md:5},
+          pr: { md: 5 },
         }}
       >
         <Typography

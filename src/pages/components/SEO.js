@@ -23,9 +23,20 @@ function SEO() {
       container
       id="seo"
       xs={12}
-      sx={{ pt: 12, justifyContent: { md: "center", sm: "space-between" } }}
+      sx={{
+        maxWidth: "1920px",
+        pt: 12,
+        justifyContent: { md: "center", sm: "space-between" },
+      }}
     >
-      <Grid md={8} p={4} className="cardSEO">
+      <Grid
+        md={8}
+        p={4}
+        className="cardSEO"
+        sx={{
+          maxWidth: "1260px",
+        }}
+      >
         <Grid
           md={12}
           xs={12}

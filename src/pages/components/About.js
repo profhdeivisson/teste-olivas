@@ -12,6 +12,7 @@ function About() {
       md={12}
       xs={12}
       sx={{
+        maxWidth: "1920px",
         pt: 12,
         justifyContent: { md: "center", sm: "space-between" },
         paddingX: { xs: 2 },
@@ -22,6 +23,7 @@ function About() {
         md={4}
         xs={12}
         sx={{
+          maxWidth: "1260px",
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",
@@ -52,7 +54,9 @@ function About() {
           duration={500}
           sx={{ textDecoration: "none" }}
         >
-          <StyledButton className="button-theme">Entrar em contato</StyledButton>
+          <StyledButton className="button-theme">
+            Entrar em contato
+          </StyledButton>
         </Link>
       </Grid>
       <Grid

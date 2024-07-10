@@ -6,6 +6,7 @@ function Footer() {
     <Grid
       container
       sx={{
+        maxWidth: "1920px",
         backgroundColor: "#E6E6E6",
         justifyContent: "center",
       }}
@@ -16,9 +17,10 @@ function Footer() {
         xs={12}
         md={7}
         sx={{
+          maxWidth: "1260px",
           justifyContent: "space-between",
           padding: 4,
-          paddingBottom: {xs: 12}
+          paddingBottom: { xs: 12 },
         }}
       >
         <Grid
@@ -90,11 +92,11 @@ function Footer() {
               </Typography>
               <Grid
                 item
-                mt={{md: 1, xs: 2}}
+                mt={{ md: 1, xs: 2 }}
                 sx={{
-                  maxWidth: {md: 130, xs: "none"},
+                  maxWidth: { md: 130, xs: "none" },
                   display: "flex",
-                  justifyContent: {md: "space-between", xs: "space-evenly"},
+                  justifyContent: { md: "space-between", xs: "space-evenly" },
                 }}
               >
                 <Image

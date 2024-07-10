@@ -34,6 +34,7 @@ function Contact() {
       pt={5}
       pb={3}
       sx={{
+        maxWidth: "1920px",
         justifyContent: "center",
         flexDirection: "column",
         alignContent: "center",
@@ -46,6 +47,7 @@ function Contact() {
         pt={5}
         pb={5}
         sx={{
+          maxWidth: "1260px",
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",
