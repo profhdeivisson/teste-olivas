@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Teste Técnico | Olivas Digital
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+Este projeto é um site desenvolvido para o teste técnico da empresa Olivas Digital, utilizando Next.js como framework principal.
 
-```bash
+## Pré-requisitos
+
+Antes de começar, verifique se você possui o seguinte instalado em seu ambiente de desenvolvimento:
+
+- **Node.js (versão 12 ou superior)**
+- **npm ou Yarn**
+
+## Instalação
+
+Para rodar o projeto localmente, siga estas etapas:
+
+1. Clone o repositório do GitHub:
+   `git clone https://github.com/profhdeivisson/teste-olivas.git`
+2. Navegue até o diretório do projeto
+   `cd teste-olivas`
+3. Instale as dependências necessárias:
+   ```
+   npm install
+   # ou
+   yarn
+   ```
+
+## Executando o projeto
+
+Após completar a instalação, você pode iniciar o servidor de desenvolvimento localmente:
+
+```
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Isso iniciará o servidor de desenvolvimento do Next.js. Abra seu navegador e vá para http://localhost:3000 para visualizar o projeto.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+O Projeto está organizado da seguinte forma:
 
-## Learn More
+```
+teste-olivas/
+├── public/          # Arquivos estáticos
+│   └── images/      # Imagens utilizadas no projeto
+├── src/             # Código-fonte do projeto
+│   ├── pages/       # Páginas do site
+│     └── Components/  # Componentes React reutilizáveis
+│   └── styles/      # Estilos globais
+├── README.md        # Documentação do projeto
+├── next.config.js   # Configurações do Next.js
+├── package.json     # Dependências do projeto e scripts
+└── yarn.lock        # Arquivo gerado pelo Yarn, detalhando as versões exatas das dependências instaladas
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js: Framework React para aplicações web.
+- React: Biblioteca JavaScript para construção de interfaces de usuário.
+- Material-UI: Componentes React para uma estilização rápida e consistente.
+- mui-phone-number: Componente para entrada de números de telefone.
+- axios: Cliente HTTP para fazer requisições.
+- react-slick: Carousel React responsivo.
+- Principais características do ExcelMerge:
