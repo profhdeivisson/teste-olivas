@@ -9,16 +9,16 @@ function Performance() {
       xs={12}
       id="performance"
       sx={{
-        maxWidth: "1920px",
+        width:"1260px",
         pt: 10,
         justifyContent: { md: "center", sm: "space-between" },
         paddingX: { xs: 2 },
+        margin: "auto"
       }}
     >
       <Grid
         md={12}
         sx={{
-          maxWidth: "1260px",
           display: "flex",
           justifyContent: "center",
         }}
@@ -28,6 +28,7 @@ function Performance() {
           sx={{
             color: "var(--third-color)",
             fontWeight: "500",
+            fontSize: 45,
             mb: 2,
             textAlign: { xs: "center" },
           }}
@@ -37,7 +38,7 @@ function Performance() {
       </Grid>
       <Grid
         item
-        md={4}
+        md={6}
         sx={{ display: "flex", justifyContent: "center", pl: 5, pr: 5 }}
       >
         <StyledImage
@@ -47,7 +48,7 @@ function Performance() {
       </Grid>
       <Grid
         item
-        md={4}
+        md={5}
         xs={12}
         sx={{
           display: "flex",

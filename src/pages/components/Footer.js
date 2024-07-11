@@ -6,7 +6,6 @@ function Footer() {
     <Grid
       container
       sx={{
-        maxWidth: "1920px",
         backgroundColor: "#E6E6E6",
         justifyContent: "center",
       }}
@@ -15,14 +14,14 @@ function Footer() {
       <Grid
         container
         xs={12}
-        md={7}
+        md={6}
         sx={{
-          maxWidth: "1260px",
           justifyContent: "space-between",
           padding: 4,
-          paddingBottom: { xs: 12 },
+          paddingBottom: { xs: 12, md: 2 },
         }}
       >
+        <Grid item sx={{width: "1260px", margin:"auto", display: "flex"}}>
         <Grid
           item
           xs={12}
@@ -36,8 +35,8 @@ function Footer() {
         >
           <Image
             src="/images/Logo.png"
-            width="150"
-            height="43"
+            width="180"
+            height="57"
             alt="Logo Olivas Digital"
           />
           <Typography
@@ -60,11 +59,11 @@ function Footer() {
             flexDirection: "column",
             justifyContent: "center",
             textAlign: { xs: "center", md: "left" },
-            marginTop: { xs: 5 },
+            marginTop: { xs: 5, md: 0 },
           }}
           pl={1}
         >
-          <Typography variant="h6" sx={{ color: "rgba(93, 93, 93, 1)", mb: 1 }}>
+          <Typography variant="h6" sx={{ color: "rgba(93, 93, 93, 1)", mb: 1, fontWeight: "bold" }}>
             Fale conosco
           </Typography>
           <Grid
@@ -121,6 +120,7 @@ function Footer() {
             </Grid>
           </Grid>
         </Grid>
+      </Grid>
       </Grid>
       <Grid
         item

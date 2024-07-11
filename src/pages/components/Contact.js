@@ -21,20 +21,27 @@ const roles = [
 
 function Contact() {
   const [select, setSelect] = useState("");
+  const [selectedRole, setSelectedRole] = useState("");
+  const [labelText, setLabelText] = useState("Selecione uma opção");
 
   const handleChange = (event) => {
-    setSelect(event.target.value);
+    setSelectedRole(event.target.value);
+    if (event.target.value === "") {
+      setLabelText("Selecione uma opção");
+    } else {
+      setLabelText("");
+    }
   };
 
   return (
     <Grid
       container
       id="contato"
-      md={12}
       pt={5}
       pb={3}
       sx={{
-        maxWidth: "1920px",
+        width: "1260px",
+        margin: "auto",
         justifyContent: "center",
         flexDirection: "column",
         alignContent: "center",
@@ -42,12 +49,11 @@ function Contact() {
       }}
     >
       <Grid
-        md={6}
-        xs={12}
+        md={10}
+        xs={8}
         pt={5}
         pb={5}
         sx={{
-          maxWidth: "1260px",
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",
@@ -56,7 +62,11 @@ function Contact() {
       >
         <Typography
           variant="h4"
-          sx={{ color: "var(--main-color)", fontWeight: "500" }}
+          sx={{
+            color: "var(--main-color)",
+            fontSize: "45px",
+            fontWeight: "500",
+          }}
           mb={2}
         >
           Entre em contato e{" "}
@@ -68,7 +78,7 @@ function Contact() {
           possível.
         </Typography>
       </Grid>
-      <Grid container md={6}>
+      <Grid container md={8} sx={{ margin: "auto" }}>
         <form>
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
@@ -121,7 +131,7 @@ function Contact() {
               </InputLabel>
               <TextField
                 id="role"
-                value={select}
+                value={selectedRole}
                 onChange={handleChange}
                 variant="outlined"
                 required
@@ -129,7 +139,7 @@ function Contact() {
                 className="fieldForm"
                 margin="normal"
                 select
-                label="Selecione uma opção"
+                label={labelText}
               >
                 {roles.map((role) => (
                   <MenuItem key={role.value} value={role.value}>

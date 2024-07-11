@@ -12,7 +12,6 @@ function About() {
       md={12}
       xs={12}
       sx={{
-        maxWidth: "1920px",
         pt: 12,
         justifyContent: { md: "center", sm: "space-between" },
         paddingX: { xs: 2 },
@@ -20,10 +19,9 @@ function About() {
     >
       <Grid
         item
-        md={4}
+        md={5}
         xs={12}
         sx={{
-          maxWidth: "1260px",
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",
@@ -32,7 +30,7 @@ function About() {
       >
         <Typography
           variant="h4"
-          sx={{ color: "var(--main-color)", fontWeight: "500" }}
+          sx={{ color: "var(--main-color)", fontSize: 45, fontWeight: "500" }}
           mb={2}
         >
           Teste de desenvolvimento{" "}
@@ -61,7 +59,7 @@ function About() {
       </Grid>
       <Grid
         item
-        md={4}
+        md={5}
         xs={12}
         sx={{
           display: "flex",

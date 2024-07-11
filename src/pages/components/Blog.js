@@ -59,15 +59,6 @@ function Blog() {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
@@ -91,7 +82,6 @@ function Blog() {
       pt={5}
       pb={3}
       sx={{
-        maxWidth: "1920px",
         justifyContent: "center",
         flexDirection: "column",
         alignContent: "center",
@@ -101,7 +91,6 @@ function Blog() {
         <Typography
           variant="h4"
           sx={{
-            maxWidth: "1260px",
             color: "var(--main-color)",
             fontWeight: "500",
             textAlign: "center",
@@ -111,7 +100,7 @@ function Blog() {
           Últimas do <span className="third">Blog</span>
         </Typography>
       </Grid>
-      <Grid item xs={12} md={8}>
+      <Grid item xs={12} md={10}>
         <Slider {...settings}>
           {posts.map((post, index) => (
             <Grid key={index} item>

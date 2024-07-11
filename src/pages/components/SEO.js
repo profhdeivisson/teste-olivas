@@ -24,18 +24,16 @@ function SEO() {
       id="seo"
       xs={12}
       sx={{
-        maxWidth: "1920px",
+        width: "1260px",
         pt: 12,
+        margin: "auto",
         justifyContent: { md: "center", sm: "space-between" },
       }}
     >
       <Grid
-        md={8}
+        // md={12}
         p={4}
         className="cardSEO"
-        sx={{
-          maxWidth: "1260px",
-        }}
       >
         <Grid
           md={12}
@@ -43,12 +41,12 @@ function SEO() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            marginBottom: { xs: 5 },
+            marginBottom: { xs: 5, md: 0 },
           }}
         >
           <Typography
             variant="h4"
-            sx={{ color: "var(--main-color)", fontWeight: "500" }}
+            sx={{ color: "var(--main-color)", fontSize: 45, fontWeight: "500" }}
           >
             SEO, ou <span className="secondary">otimização</span>
           </Typography>
@@ -94,7 +92,7 @@ function SEO() {
             ))}
           </List>
         </Grid>
-        <Grid md={6} p={4} xs={12}>
+        <Grid md={6} xs={12} sx={{display: "flex", justifyContent: "center"}}>
           <StyledImage src="/images/imagem.png" alt="SEO" />
         </Grid>
       </Grid>

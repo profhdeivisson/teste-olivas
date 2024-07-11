@@ -21,25 +21,16 @@
 }
 .text-content {
   color: var(--light-main-color);
-  font-size: 14px;
+  font-size: 20px;
 }
 .button-theme {
-  background-color: var(--secondary-color);
-  text-transform: none;
-  padding: 10px 50px;
-  border-radius: 50px;
-  color: var(--white-color);
   margin-top: 20px;
-  max-width: 250px;
-  &:hover {
-    background-color: var(--dark-secondary-color);
-  }
 }
 .cardSEO {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-radius: 50px;
+  border-radius: 30px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.059);
 }
 .fieldForm {

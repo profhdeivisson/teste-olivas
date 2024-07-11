@@ -29,10 +29,8 @@ function Header() {
   return (
     <Grid
       container
-      md={12}
       xs={12}
       sx={{
-        maxWidth: "1920px",
         pt: 2,
         pb: 2,
         paddingX: { xs: 2 },
@@ -44,10 +42,10 @@ function Header() {
     >
       <Grid
         item
-        md={8}
+        md={10}
         xs={12}
         sx={{
-          maxWidth: "1260px",
+          width: "1260px",
           display: "flex",
           justifyContent: "space-between",
         }}
@@ -55,8 +53,8 @@ function Header() {
         <Grid>
           <Image
             src="/images/Logo.png"
-            width="150"
-            height="43"
+            width="270"
+            height="83"
             alt="Logo Olivas Digital"
           />
         </Grid>
@@ -85,6 +83,8 @@ function Header() {
                     backgroundColor: "var(--white-color)",
                     color: "var(--secondary-color)",
                   },
+                  fontSize: 20,
+                  fontWeight: 400
                 }}
               >
                 {page}
