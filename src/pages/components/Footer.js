@@ -14,19 +14,18 @@ function Footer() {
       <Grid
         container
         xs={12}
-        md={6}
+        md={8}
         sx={{
           justifyContent: "space-between",
           padding: 4,
-          paddingBottom: { xs: 12, md: 2 },
+          paddingBottom: { xs: 12, md: 3 },
         }}
       >
-        <Grid item sx={{width: "1260px", margin:"auto", display: "flex"}}>
         <Grid
           item
           xs={12}
           md={6}
-          pr={{ md: 2 }}
+          pr={{ md: 4 }}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -63,7 +62,10 @@ function Footer() {
           }}
           pl={1}
         >
-          <Typography variant="h6" sx={{ color: "rgba(93, 93, 93, 1)", mb: 1, fontWeight: "bold" }}>
+          <Typography
+            variant="h6"
+            sx={{ color: "rgba(93, 93, 93, 1)", mb: 1, fontWeight: "bold" }}
+          >
             Fale conosco
           </Typography>
           <Grid
@@ -75,7 +77,7 @@ function Footer() {
             }}
           >
             <Grid item md={6}>
-              <Typography variant="p" className="text-content">
+              <Typography variant="p" sx={{color:"var(--light-main-color)"}}>
                 <strong>Atendimento</strong>
                 <div mt={2}>+55 (11) 2391-6090</div>
               </Typography>
@@ -86,7 +88,7 @@ function Footer() {
               mt={{ md: 0, xs: 5 }}
               sx={{ display: "flex", flexDirection: "column" }}
             >
-              <Typography variant="p" className="text-content">
+              <Typography variant="p" sx={{color:"var(--light-main-color)"}}>
                 <strong>Redes Sociais</strong>
               </Typography>
               <Grid
@@ -120,7 +122,6 @@ function Footer() {
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
       </Grid>
       <Grid
         item
